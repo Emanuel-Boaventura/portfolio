@@ -7,7 +7,7 @@ const Hero = () => {
       <div className='text-3xl text-gray-200 z-10 my-auto'>
         <p>Hi There!</p>
         <h1 className='text-6xl font-bold'>I am Link, not Zelda.</h1>
-        <p>A Swordsman Warrior</p>
+        <p>A Swordsman Warrior.</p>
       </div>
       <Image
         alt='link'

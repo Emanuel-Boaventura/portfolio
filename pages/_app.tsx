@@ -4,7 +4,7 @@ import { roboto } from '../utils/fonts';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${roboto.variable} font-sans`}>
+    <main className={`${roboto.className} font-sans`}>
       <Component {...pageProps} />
     </main>
   );
