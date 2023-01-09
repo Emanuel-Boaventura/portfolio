@@ -20,6 +20,7 @@
     "typescript": "*"
   },
   "devDependencies": {
+    "@heroicons/react": "^2.0.13",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.0.1",
