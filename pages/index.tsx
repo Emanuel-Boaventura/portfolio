@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import About from '../components/About';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 
@@ -11,9 +12,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='bg-neutral-700'>
-        <Navbar />
-        <main className='max-w-[96%] m-auto '>
+        <div className='sticky'>
+          <Navbar />
+        </div>
+        <main className='relative m-auto '>
           <Hero />
+          <About />
         </main>
       </div>
     </>

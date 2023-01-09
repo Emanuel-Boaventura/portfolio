@@ -13,6 +13,10 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-roboto)', ...fontFamily.sans],
       },
+
+      height: {
+        page: '95vh',
+      },
     },
   },
   plugins: [],
