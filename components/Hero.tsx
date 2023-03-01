@@ -1,19 +1,28 @@
-import Image from 'next/image';
-import link from '../public/link.png';
+import Image from "next/image";
+import link from "../public/link.png";
 
 const Hero = () => {
   return (
-    <section className='flex container mx-auto relative pt-[5vh] h-screen'>
-      <div className='text-3xl text-gray-200 z-10 my-auto'>
-        <p>Hi There!</p>
-        <h1 className='text-6xl font-bold'>I am Link, not Zelda.</h1>
-        <p>A Swordsman Warrior.</p>
+    <section
+      className="flex container flex-col items-center mx-auto relative h-screen
+    text-gray-200 "
+    >
+      <div className="flex flex-col my-auto items-center">
+        <div
+          className="w-[10rem] h-[10rem] border-green-400 border-2 rounded-full overflow-hidden
+        items-center pt-10 flex"
+        >
+          <Image alt="link" src={link} className="grayscale object-contain" />
+        </div>
+        <div className="text-3xl z-10 text-center mt-5">
+          <p className="text-base">Hi There!</p>
+          <h1 className="text-2xl font-bold">I am Emanuel Boaventura.</h1>
+          <p className="text-xl text-green-400">A FullStack Developer.</p>
+        </div>
       </div>
-      <Image
-        alt='link'
-        src={link}
-        className='z-1 absolute right-0 h-page w-auto min-w-fit grayscale'
-      />
+      <div className="my-auto">
+        <p className="text-base">Wanna know more? Just scroll down!</p>
+      </div>
     </section>
   );
 };
