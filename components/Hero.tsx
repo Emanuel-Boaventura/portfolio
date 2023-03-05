@@ -21,7 +21,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="my-auto">
-        <p className="text-base">Wanna know more? Just scroll down!</p>
+        <p className="text-base text-center">
+          Wanna know more? Just scroll down!
+        </p>
       </div>
     </section>
   );
