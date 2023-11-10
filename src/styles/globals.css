@@ -5,3 +5,18 @@
 * {
   font-family: 'JetBrains Mono', monospace;
 }
+
+button:active,
+a:active {
+  transform: translateY(1px);
+}
+
+@layer components {
+  .header-sections {
+    @apply border-b-2 border-transparent transition-colors hover:border-lime-500;
+  }
+
+  .header-links {
+    @apply hover:text-lime-500 transition-colors;
+  }
+}
