@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className='fixed top-0 z-10 w-full px-6 py-4  bg-neutral-800 font-semibold'>
+    <header className='fixed top-0 z-10 w-full px-6 py-4  bg-[#0a0a0a] font-semibold'>
       <div className='container mx-auto flex justify-between items-center'>
         <p className='text-2xl'>
           Emanuel-<span>Boaventura</span>

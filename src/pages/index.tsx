@@ -4,7 +4,7 @@ import { Hero } from '@/components/Hero'
 
 export default function Home() {
   return (
-    <div className='min-h-screen bg-neutral-800 text-white flex flex-col'>
+    <div className='min-h-screen bg-[#0d0d0d] text-white flex flex-col'>
       <Header />
       <main className='container mx-auto'>
         <Hero />

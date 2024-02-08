@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className='py-6 mt-auto'>
+    <footer className='py-6 mt-auto bg-[#0a0a0a]'>
       <div className='container mx-auto flex justify-center'>
         <p>
           Desenvolvido por:{' '}
