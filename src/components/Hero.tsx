@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import link from '@/public/link.png'
-import react from '@/public/react.png'
+import hero from '@/public/hero.png'
+import next from '@/public/next-n.png'
 import node from '@/public/node.svg'
-import next from '@/public/next.svg'
+import react from '@/public/react.png'
 import typescript from '@/public/typescript.svg'
+import Image from 'next/image'
 
 const techs = [
   {
@@ -42,9 +42,9 @@ export function Hero() {
 
           <div className='flex gap-10 mt-4'>
             <div className='flex gap-2'>
-              <p className='text-5xl font-["Roboto"]'>1</p>
+              <p className='text-5xl font-["Roboto"]'>12</p>
               <p>
-                ANO DE <br /> EXPERIÊNCIA
+                MESES DE <br /> EXPERIÊNCIA
               </p>
             </div>
 
@@ -59,9 +59,10 @@ export function Hero() {
 
         <div>
           <Image
-            src={link}
+            src={hero}
             alt='Uma foto minha'
-            className='grayscale w-full object-contain max-w-xl min-h-[304px] h-[calc(100vh_-88px_-_24px_-_96px_-_24px)]'
+            quality={100}
+            className='w-full object-contain max-w-xl min-h-[304px] h-fit max-h-[680px] border-r-4 border-b-4 border-lime-500 teste'
           />
         </div>
       </div>
@@ -73,10 +74,7 @@ export function Hero() {
 
         <div className='flex gap-4'>
           {techs.map(tech => (
-            <div
-              key={tech.alt}
-              className='flex justify-center items-center rounded bg-white w-12 h-12'
-            >
+            <div key={tech.alt} className={tech.alt === 'Next.JS' ? '' : ''}>
               <Image
                 src={tech.img}
                 alt={`Logo ${tech.alt}`}
