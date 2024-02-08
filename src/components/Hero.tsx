@@ -40,7 +40,7 @@ export function Hero() {
             <span className='underline underline-offset-4'>FullStack</span>
           </p>
 
-          <div className='flex gap-10 mt-4'>
+          {/* <div className='flex gap-10 mt-4'>
             <div className='flex gap-2'>
               <p className='text-5xl font-["Roboto"]'>12</p>
               <p>
@@ -54,7 +54,7 @@ export function Hero() {
                 PROJETOS DESENVOLVIDOS <br /> NA CARREIRA
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div>
@@ -62,7 +62,7 @@ export function Hero() {
             src={hero}
             alt='Uma foto minha'
             quality={100}
-            className='w-full object-contain max-w-xl min-h-[304px] h-fit max-h-[680px] border-r-4 border-b-4 border-lime-500 teste'
+            className='w-full object-contain max-w-xl min-h-[304px] h-fit max-h-[680px] border-r-4 border-b-4 border-lime-500'
           />
         </div>
       </div>

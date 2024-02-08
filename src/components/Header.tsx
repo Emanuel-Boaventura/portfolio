@@ -11,15 +11,15 @@ export function Header() {
             Sobre mim
           </a>
 
-          <a href='#about' className='sections'>
+          <a href='#skills' className='sections'>
             Habilidates
           </a>
 
-          <a href='#about' className='sections'>
+          <a href='#projects' className='sections'>
             Projetos
           </a>
 
-          <a href='#about' className='sections'>
+          <a href='#career' className='sections'>
             Carreira
           </a>
         </div>
