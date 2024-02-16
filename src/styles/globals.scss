@@ -14,7 +14,7 @@ a:active {
 
 @layer components {
   .sections {
-    @apply border-b-2 border-transparent transition-colors hover:border-lime-500;
+    @apply transition-colors hover:underline hover:border-lime-500;
   }
 
   .links {
@@ -23,5 +23,96 @@ a:active {
 
   span {
     @apply text-lime-500;
+  }
+
+  .container-sub {
+    // @apply w-full max-w-screen-xl max-2xl:max-w-screen-lg max-xl:max-w-screen-md;
+    width: 100%;
+    max-width: 1280px;
+
+    @media (max-width: 1536px) {
+      max-width: 1024px;
+    }
+
+    @media (max-width: 1280px) {
+      max-width: 768px;
+    }
+
+    // @media (min-width: 768px) {
+    //   .container {
+    //     max-width: 768px;
+    //   }
+    // }
+    // @media (min-width: 1024px) {
+    //   .container {
+    //     max-width: 1024px;
+    //   }
+    // }
+    // @media (min-width: 1280px) {
+    //   .container {
+    //     max-width: 1280px;
+    //   }
+    // }
+  }
+
+  .container-height {
+    height: 100vh;
+    max-height: 900px;
+
+    @media (max-width: 1536px) {
+      max-height: 800px;
+    }
+
+    @media (max-width: 1280px) {
+      max-height: 700px;
+    }
+
+    // @media (min-width: 768px) {
+    //   .container {
+    //     max-height: 768px;
+    //   }
+    // }
+    // @media (min-width: 1024px) {
+    //   .container {
+    //     max-width: 1024px;
+    //   }
+    // }
+    // @media (min-width: 1280px) {
+    //   .container {
+    //     max-width: 1280px;
+    //   }
+    // }
+  }
+}
+
+.animate-open {
+  animation-name: openAnime; /* Name of the animation as defined above */
+  animation-duration: 0.2s; /* Duration of the animation */
+  animation-timing-function: ease-out; /* Constant speed throughout the animation */
+  animation-fill-mode: forwards; /* Keeps the end state after the animation ends */
+}
+
+.animate-close {
+  animation-name: closeAnime; /* Name of the animation as defined above */
+  animation-duration: 0.2s; /* Duration of the animation */
+  animation-timing-function: ease-in; /* Constant speed throughout the animation */
+  animation-fill-mode: forwards; /* Keeps the end state after the animation ends */
+}
+
+@keyframes closeAnime {
+  0% {
+    width: 280px; /* Ending width */
+  }
+  100% {
+    width: 0px; /* Starting width */
+  }
+}
+
+@keyframes openAnime {
+  0% {
+    width: 0px; /* Starting width */
+  }
+  100% {
+    width: 280px; /* Ending width */
   }
 }
