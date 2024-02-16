@@ -26,7 +26,6 @@ a:active {
   }
 
   .container-sub {
-    // @apply w-full max-w-screen-xl max-2xl:max-w-screen-lg max-xl:max-w-screen-md;
     width: 100%;
     max-width: 1280px;
 
@@ -35,53 +34,8 @@ a:active {
     }
 
     @media (max-width: 1280px) {
-      max-width: 768px;
+      max-width: 900px;
     }
-
-    // @media (min-width: 768px) {
-    //   .container {
-    //     max-width: 768px;
-    //   }
-    // }
-    // @media (min-width: 1024px) {
-    //   .container {
-    //     max-width: 1024px;
-    //   }
-    // }
-    // @media (min-width: 1280px) {
-    //   .container {
-    //     max-width: 1280px;
-    //   }
-    // }
-  }
-
-  .container-height {
-    height: 100vh;
-    max-height: 900px;
-
-    @media (max-width: 1536px) {
-      max-height: 800px;
-    }
-
-    @media (max-width: 1280px) {
-      max-height: 700px;
-    }
-
-    // @media (min-width: 768px) {
-    //   .container {
-    //     max-height: 768px;
-    //   }
-    // }
-    // @media (min-width: 1024px) {
-    //   .container {
-    //     max-width: 1024px;
-    //   }
-    // }
-    // @media (min-width: 1280px) {
-    //   .container {
-    //     max-width: 1280px;
-    //   }
-    // }
   }
 }
 
