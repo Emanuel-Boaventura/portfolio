@@ -33,10 +33,25 @@ a:active {
       max-width: 1024px;
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1199px) {
       max-width: 900px;
     }
   }
+}
+
+.neon {
+  border-radius: 4px;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #84cc16;
+  box-shadow:
+    0 0 0.2rem #fff,
+    0 0 0.2rem #fff,
+    0 0 2rem #84cc16,
+    0 0 0.8rem #84cc16,
+    0 0 2.8rem #84cc16,
+    inset 0 0 1.3rem #84cc16;
 }
 
 .animate-open {

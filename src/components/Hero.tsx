@@ -26,7 +26,7 @@ const techs = [
 
 export function Hero() {
   return (
-    <section className='flex flex-col  py-[calc(64px_+_24px)] pb-6 items-center justify-center relative'>
+    <section className='flex flex-col pt-[calc(64px_+_24px)] items-center justify-center relative'>
       <div
         className='flex flex-col items-center relative
         sm:container-sub sm:justify-between
@@ -101,7 +101,7 @@ export function Hero() {
         </div>
       </div>
 
-      <span className='mt-8 '>
+      <span className='my-8 '>
         Ver mais <span className='animate-bounce inline-flex'>↓</span>
       </span>
     </section>
