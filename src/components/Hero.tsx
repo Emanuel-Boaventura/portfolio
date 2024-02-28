@@ -1,7 +1,7 @@
 import hero from '@/public/hero.png'
 import next from '@/public/next-n.png'
 import node from '@/public/node.svg'
-import react from '@/public/react.png'
+import tailwind from '@/public/tailwind.png'
 import typescript from '@/public/typescript.svg'
 import Image from 'next/image'
 
@@ -14,19 +14,23 @@ const techs = [
     img: typescript,
     alt: 'TypeScript',
   },
-  {
-    img: react,
-    alt: 'React.JS',
-  },
+  // {
+  //   img: react,
+  //   alt: 'React.JS',
+  // },
   {
     img: node,
     alt: 'Node.JS',
+  },
+  {
+    img: tailwind,
+    alt: 'Tailwind',
   },
 ]
 
 export function Hero() {
   return (
-    <section className='flex flex-col pt-[calc(64px_+_24px)] items-center justify-center relative'>
+    <section className='flex flex-col pt-[calc(64px_+_24px)] pb-20 items-center justify-center relative'>
       <div
         className='flex flex-col items-center relative
         sm:container-sub sm:justify-between
@@ -69,20 +73,12 @@ export function Hero() {
 
             <div className='grid grid-cols-4 w-fit mx-auto gap-4 mt-2 lg:mx-0 lg:grid-cols-5'>
               {techs.map(tech => (
-                <div
+                <Image
+                  src={tech.img}
                   key={tech.alt}
-                  className={tech.alt === 'Next.JS' ? '' : ''}
-                >
-                  <Image
-                    src={tech.img}
-                    alt={`Logo ${tech.alt}`}
-                    className={`${
-                      tech.alt === 'React.JS'
-                        ? 'animate-[spin_10s_linear_infinite]'
-                        : ''
-                    } w-7 h-7 sm:w-11 sm:h-11 object-contain`}
-                  />
-                </div>
+                  alt={`Logo ${tech.alt}`}
+                  className='w-7 h-7 sm:w-11 sm:h-11 object-contain'
+                />
               ))}
             </div>
           </div>

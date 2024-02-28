@@ -32,7 +32,7 @@ export function Header({ setOpen }: IHeader) {
 
         <div className='hidden md:flex text-base gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
           <a href='#about' className='links lg:sections'>
-            Bioagrafia
+            Biografia
           </a>
 
           {/* <a href='#skills' className='links lg:sections'>

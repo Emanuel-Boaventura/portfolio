@@ -5,8 +5,12 @@ export function About() {
   return (
     <section
       id='about'
-      className='flex flex-col pb-6 pt-12 items-center justify-center sm:pb-12'
+      className='flex flex-col py-20 items-center justify-center'
     >
+      <h2 className='text-xl font-bold text-center mb-10  sm:text-2xl'>
+        Biografia
+      </h2>
+
       <div
         className='flex flex-col gap-10 items-center relative w-[86.25vw] px-4 container-sub
         lg:flex-row lg:px-7
@@ -14,7 +18,7 @@ export function About() {
         xl:justify-between
         '
       >
-        <div className='neon left-0' />
+        <div className='neon absolute w-0.5 h-full left-0' />
 
         <div
           className='flex w-60 h-60 border-4 border-lime-500 items-center justify-center overflow-hidden
@@ -24,7 +28,7 @@ export function About() {
           <Image src={hero} alt='Uma foto minha' quality={100} />
         </div>
 
-        <div className='bg-neutral-950 p-4'>
+        <div className='bg-[rgba(20,_20,_20)] p-4'>
           <p
             className='text-sm max-w-sm text-justify leading-relaxed
             sm:max-w-md
@@ -38,7 +42,7 @@ export function About() {
           </p>
         </div>
 
-        <div className='neon right-0' />
+        <div className='neon absolute w-0.5 h-full right-0 ' />
       </div>
     </section>
   )

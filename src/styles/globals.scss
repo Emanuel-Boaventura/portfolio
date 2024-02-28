@@ -41,9 +41,6 @@ a:active {
 
 .neon {
   border-radius: 4px;
-  position: absolute;
-  width: 2px;
-  height: 100%;
   background-color: #84cc16;
   box-shadow:
     0 0 0.2rem #fff,
@@ -52,6 +49,12 @@ a:active {
     0 0 0.8rem #84cc16,
     0 0 2.8rem #84cc16,
     inset 0 0 1.3rem #84cc16;
+}
+
+.neon-shadow {
+  box-shadow:
+    0 0 2px #fff,
+    0 0 24px #84cc16;
 }
 
 .animate-open {
