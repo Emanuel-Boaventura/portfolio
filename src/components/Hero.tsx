@@ -1,8 +1,8 @@
-import hero from '@/public/hero.png'
-import next from '@/public/next-n.png'
-import node from '@/public/node.svg'
-import tailwind from '@/public/tailwind.png'
-import typescript from '@/public/typescript.svg'
+import hero from '@/public/my-photos/hero.png'
+import next from '@/public/techs/next.png'
+import node from '@/public/techs/node.svg'
+import tailwind from '@/public/techs/tailwind.png'
+import typescript from '@/public/techs/typescript.svg'
 import Image from 'next/image'
 
 const techs = [

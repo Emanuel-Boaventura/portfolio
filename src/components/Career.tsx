@@ -1,8 +1,8 @@
 import dompixel from '@/public/dompixel.svg'
-import next from '@/public/next-n.png'
-import node from '@/public/node.svg'
-import tailwind from '@/public/tailwind.png'
-import typescript from '@/public/typescript.svg'
+import next from '@/public/techs/next.png'
+import node from '@/public/techs/node.svg'
+import tailwind from '@/public/techs/tailwind.png'
+import typescript from '@/public/techs/typescript.svg'
 import Image, { StaticImageData } from 'next/image'
 
 interface IJobs {

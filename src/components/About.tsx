@@ -1,4 +1,4 @@
-import hero from '@/public/about.jpg'
+import hero from '@/public/my-photos/about.jpg'
 import Image from 'next/image'
 
 export function About() {
