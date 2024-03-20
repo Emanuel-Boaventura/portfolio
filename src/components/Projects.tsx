@@ -27,7 +27,7 @@ const projects: IProjects[] = [
     img: bozo,
     href: 'https://bozo-web.vercel.app/',
     description:
-      'Bozó Web é um aplicativo funcional e real, projetado para facilitar a marcação de pontos, controle de turnos e visualização do ranking de jogadores. Desenvolvido com Next.js, TypeScript e Tailwind, demonstra minha habilidade em construir soluções práticas e eficazes.',
+      'Bozó Web é um site funcional, criado para facilitar a marcação de pontos, controle de turnos e ranqueamento de jogadores. Desenvolvido para dispositivos móveis, ele opera offline e inclui um sistema de dados para garantir a acessibilidade dos usuários.',
     techs: [
       {
         img: next,
@@ -48,7 +48,7 @@ const projects: IProjects[] = [
     img: coffee,
     href: 'https://coffee-delivery-sigma-jet.vercel.app/',
     description:
-      'Coffee Delivery é um exemplo de loja online de café, demonstrando minha capacidade de desenvolvimento web. Com React.js, TypeScript e Sass, o projeto destaca minha habilidade em criar interfaces intuitivas e eficientes para clientes.',
+      'Coffee Delivery é um exemplo de loja online de café, demonstrando minha capacidade de desenvolvimento web. O projeto destaca minha habilidade em criar interfaces intuitivas e eficientes para clientes.',
     techs: [
       {
         img: react,
@@ -69,7 +69,7 @@ const projects: IProjects[] = [
     img: omnifood,
     href: 'https://omnifood-flax.vercel.app/',
     description:
-      'Omnifood é um exemplo da minha capacidade de desenvolvimento com HTML e CSS puro. A página de divulgação de um serviço de assinatura de refeições destaca-se pela sua simplicidade e elegância, demonstrando meu domínio das tecnologias fundamentais da web.',
+      'Omnifood é um exemplo da minhas habilidades com HTML e CSS puro. A página de divulgação de um serviço de assinatura de refeições destaca-se pela sua simplicidade e elegância, demonstrando meu domínio das tecnologias fundamentais da web.',
     techs: [
       {
         img: html,
@@ -112,7 +112,7 @@ export function Projects() {
 
               <div className='neon h-px w-full' />
 
-              <div className='flex flex-col gap-3 px-6 py-4 h-[336px]'>
+              <div className='flex flex-col gap-3 px-6 py-4 h-[352px]'>
                 <div>
                   <p className='text-sm sm:text-base'>Projeto:</p>
                   <p>

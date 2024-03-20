@@ -35,18 +35,18 @@ export function About() {
             lg:text-lg lg:max-w-none
             '
           >
-            Como desenvolvedor com mais de um ano de experiência na área, minha
-            graduação em informática no Instituto Federal de Mato Grosso
-            forneceu uma base sólida. Desenvolvi várias soluções web inovadoras
-            e seguras, consolidando-me como um Desenvolvedor Web FullStack.
+            Desenvolvedor com mais de um ano de experiência na área, minha
+            graduação em informática no IFMT forneceu uma base sólida de
+            conhecimento. Desenvolvi várias soluções web inovadoras e seguras,
+            consolidando-me como um Desenvolvedor Web FullStack.
             <br />
             <br />
             Além disso, minha experiência inclui vivências profissionais em
-            diversos ambientes, como o Exército Brasileiro, onde aprimorei
-            habilidades essenciais, como foco, comunicação e agilidade na
-            resolução de problemas. Minhas especialidades em JavaScript,
-            TypeScript, Next.js, Tailwind, Node.js e Git me permitem oferecer
-            soluções rápidas e eficazes.
+            diversos ambientes, como o Exército Brasileiro, onde aprimorei meu
+            foco, comunicação e agilidade na resolução de problemas. Minhas
+            especialidades em JavaScript, TypeScript, Next.js, Tailwind, Node.js
+            e Git me permitem oferecer soluções rápidas e eficazes para qualquer
+            problema.
             <br />
             <br />
             Atualmente, estou cursando Ciência da Computação para aprimorar
