@@ -68,7 +68,7 @@ export function Hero() {
             '
           >
             <h2 className='sm:text-2xl font-bold sm:mb-4'>
-              Principais <span>Tecnlogias</span>:
+              Principais <span>Tecnologias</span>:
             </h2>
 
             <div className='grid grid-cols-4 w-fit mx-auto gap-4 mt-2 lg:mx-0 lg:grid-cols-5'>

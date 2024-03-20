@@ -36,7 +36,7 @@ export function Header({ setOpen }: IHeader) {
           </a>
 
           {/* <a href='#skills' className='links lg:sections'>
-            Habilidates
+            Habilidades
           </a> */}
 
           <a href='#projects' className='links lg:sections'>

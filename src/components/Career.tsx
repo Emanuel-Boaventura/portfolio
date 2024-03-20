@@ -78,7 +78,7 @@ export function Career() {
           </p>
 
           <p className='text-sm sm:text-base'>
-            Periodo:
+            Período:
             <br />
             <span className='text-base sm:text-lg'>
               {job.duration.start} a {job.duration.finish}

@@ -27,7 +27,7 @@ const projects: IProjects[] = [
     img: bozo,
     href: 'https://bozo-web.vercel.app/',
     description:
-      'Marcador online para Bozó que permite marcar pontos, controlar turnos e exibir ranking atual dos jogadores. Inclui um sistema de dados embutido caso os usuários não tenham dados físicos. Aplicativo construído com foco em celulares.',
+      'Bozó Web é um aplicativo funcional e real, projetado para facilitar a marcação de pontos, controle de turnos e visualização do ranking de jogadores. Desenvolvido com Next.js, TypeScript e Tailwind, demonstra minha habilidade em construir soluções práticas e eficazes.',
     techs: [
       {
         img: next,
@@ -48,7 +48,7 @@ const projects: IProjects[] = [
     img: coffee,
     href: 'https://coffee-delivery-sigma-jet.vercel.app/',
     description:
-      'Um exemplo de uma loja online de Café que oferece conveniência aos compradores, permitindo a escolha de uma variedade de grãos e blends especiais. Após a seleção do método de pagamento e a informação do endereço, o café é enviado via delivery.',
+      'Coffee Delivery é um exemplo de loja online de café, demonstrando minha capacidade de desenvolvimento web. Com React.js, TypeScript e Sass, o projeto destaca minha habilidade em criar interfaces intuitivas e eficientes para clientes.',
     techs: [
       {
         img: react,
@@ -69,7 +69,7 @@ const projects: IProjects[] = [
     img: omnifood,
     href: 'https://omnifood-flax.vercel.app/',
     description:
-      'Um exemplo de uma página de divulgação de um sistema de assinatura de comida que durante todo o ano fará a entrega de marmitas saudaveis para o cliente.',
+      'Omnifood é um exemplo da minha capacidade de desenvolvimento com HTML e CSS puro. A página de divulgação de um serviço de assinatura de refeições destaca-se pela sua simplicidade e elegância, demonstrando meu domínio das tecnologias fundamentais da web.',
     techs: [
       {
         img: html,
@@ -96,7 +96,7 @@ export function Projects() {
           {projects.map(project => (
             <a
               key={project.name}
-              className={`bg-[rgba(20,_20,_20)] flex flex-col shadow-lg min-w-[260px] w-[260px] transition-transform hover:-translate-y-4 cursor-pointer`}
+              className={`bg-[rgba(20,_20,_20)] flex flex-col shadow-lg min-w-[260px] w-[300px] transition-transform hover:-translate-y-4 cursor-pointer`}
               href={project.href}
               target='_blank'
               rel='noreferrer'

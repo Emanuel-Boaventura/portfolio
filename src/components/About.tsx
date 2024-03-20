@@ -30,15 +30,28 @@ export function About() {
 
         <div className='bg-[rgba(20,_20,_20)] p-4'>
           <p
-            className='text-sm max-w-sm text-justify leading-relaxed
-            sm:max-w-md
+            className='text-xs max-w-sm text-justify leading-relaxed
+            sm:max-w-md sm:text-sm
             lg:text-lg lg:max-w-none
             '
           >
-            Brasileiro, nascido em Cuiabá-MT. Passai boa parte da minha infância
-            no computador, conectado a internet. Essa proximidade desde pequeno
-            me fez apaixonar pela tecnologia e adentrar nesse mundo incrível, o
-            qual já faço parte como desenvolvedor a um bom tempo.
+            Como desenvolvedor com mais de um ano de experiência na área, minha
+            graduação em informática no Instituto Federal de Mato Grosso
+            forneceu uma base sólida. Desenvolvi várias soluções web inovadoras
+            e seguras, consolidando-me como um Desenvolvedor Web FullStack.
+            <br />
+            <br />
+            Além disso, minha experiência inclui vivências profissionais em
+            diversos ambientes, como o Exército Brasileiro, onde aprimorei
+            habilidades essenciais, como foco, comunicação e agilidade na
+            resolução de problemas. Minhas especialidades em JavaScript,
+            TypeScript, Next.js, Tailwind, Node.js e Git me permitem oferecer
+            soluções rápidas e eficazes.
+            <br />
+            <br />
+            Atualmente, estou cursando Ciência da Computação para aprimorar
+            ainda mais minhas habilidades e enfrentar desafios complexos no
+            mundo da tecnologia.
           </p>
         </div>
 

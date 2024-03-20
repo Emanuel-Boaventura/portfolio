@@ -1,4 +1,4 @@
-import { useViewportSize } from '@/hooks/use-viewport-zise'
+import { useViewportSize } from '@/hooks/use-viewport-size'
 import { Dispatch, SetStateAction } from 'react'
 
 interface IMenu {
