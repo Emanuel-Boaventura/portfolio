@@ -35,23 +35,22 @@ export function About() {
             lg:text-lg lg:max-w-none
             '
           >
-            Desenvolvedor com mais de um ano de experiência na área, minha
-            graduação em informática no IFMT forneceu uma base sólida de
-            conhecimento. Desenvolvi várias soluções web inovadoras e seguras,
-            consolidando-me como um Desenvolvedor Web FullStack.
+            Desenvolvedor Fullstack com alta experiência no desenvolvimento
+            Frontend. Especializado em construções de aplicações robustas com
+            TypeScript e NextJS. Seguindo padrões estabelecidos em Figma com
+            base no UX/UI.
             <br />
             <br />
-            Além disso, minha experiência inclui vivências profissionais em
-            diversos ambientes, como o Exército Brasileiro, onde aprimorei meu
-            foco, comunicação e agilidade na resolução de problemas. Minhas
-            especialidades em JavaScript, TypeScript, Next.js, Tailwind, Node.js
-            e Git me permitem oferecer soluções rápidas e eficazes para qualquer
-            problema.
+            Também possuo experiência em desenvolvimento Mobile com React Native
+            e desenvolvimento backend em APIs REST com NodeJS e os frameworks
+            AdonisJS e NestJS. Utilizando bancos relacionais e não relacionais
+            em MySQL, PostgreSQL e MongoDB.
             <br />
             <br />
-            Atualmente, estou cursando Ciência da Computação para aprimorar
-            ainda mais minhas habilidades e enfrentar desafios complexos no
-            mundo da tecnologia.
+            Proficiente no uso de Git, Github e GitLab para controle de versão e
+            colaboração em projetos, experiencia prática com Docker para
+            conteinerização e gerenciamento de ambientes. Experiência em
+            metodologias ágeis como Scrum e Kanban.
           </p>
         </div>
 
