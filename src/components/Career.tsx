@@ -29,7 +29,7 @@ const jobs: IJobs[] = [
     companyLogo: dompixel,
     duration: {
       start: 'nov/2022',
-      finish: '...',
+      finish: 'Atualmente',
     },
     description:
       'Como Dev Full-Stack na DomPixel atuei na frente do desenvolvimento de aplicações do começo ao fim, entre elas: Plataformas de RH, sites de divulgação e gestão de cursos, plataforma para gestão de campanhas de doação e plataformas para controle de produtos e vendas. Participando em reuniões periódicas com o cliente e reuniões diárias com o time de desenvolvimento para tomada de decisão em relação aos projetos.',
@@ -94,7 +94,7 @@ export function Career() {
             <div>
               <p className='text-sm sm:text-base'>Período:</p>
               <p className='text-base text-lime-500 sm:text-lg'>
-                {job.duration.start} a {job.duration.finish}
+                {job.duration.start} - {job.duration.finish}
               </p>
             </div>
           </div>
