@@ -17,29 +17,39 @@ export default function Document() {
 
         <link rel='icon' type='image/png' href='/favicon.png' />
 
-        <meta property='og:locale' content='pt_BR' />
-        <meta property='og:type' content='website' />
-        <meta property='og:title' content='Emanuel-Boaventura!' />
-        <meta
-          property='og:description'
-          content='Portfolio de Emanuel Boaventura Matos.'
-        />
-        <meta property='og:url' content='https://emanuelboaventura.com/' />
-        <meta property='og:site_name' content='Emanuel-Boaventura' />
+        {/* HTML Meta Tags  */}
+        <title>Emanuel Boaventura Matos</title>
         <meta
           name='description'
           content='Portfolio de Emanuel Boaventura Matos.'
         />
 
+        {/* Facebook Meta Tags  */}
+        <meta property='og:url' content='https://emanuelboaventura.com/' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Emanuel Boaventura Matos' />
+        <meta
+          property='og:description'
+          content='Portfolio de Emanuel Boaventura Matos.'
+        />
         <meta
           property='og:image'
-          itemProp='image'
-          content='https://www.indique.ai/my-photos/about.png'
+          content='https://emanuelboaventura.com/og-image.png'
         />
-        <meta property='og:image:width' content='512' />
-        <meta property='og:image:height' content='512' />
-        <meta property='og:image:type' content='image/png' />
-        <meta property='og:image:alt' content='Emanuel Boaventura Matos' />
+
+        {/* Twitter Meta Tags  */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta property='twitter:domain' content='emanuelboaventura.com' />
+        <meta property='twitter:url' content='https://emanuelboaventura.com/' />
+        <meta name='twitter:title' content='Emanuel Boaventura Matos' />
+        <meta
+          name='twitter:description'
+          content='Portfolio de Emanuel Boaventura Matos.'
+        />
+        <meta
+          name='twitter:image'
+          content='https://emanuelboaventura.com/og-image.png'
+        />
       </Head>
       <body>
         <Main />
