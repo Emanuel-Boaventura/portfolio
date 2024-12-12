@@ -11,6 +11,21 @@
   scroll-behavior: smooth;
 }
 
+/* custom scrollbar */
+::-webkit-scrollbar {
+  background-color: #18181b;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #505050;
+
+  &:hover {
+    background-color: #727272;
+  }
+}
+
 button:active,
 a:active {
   transform: translateY(1px);

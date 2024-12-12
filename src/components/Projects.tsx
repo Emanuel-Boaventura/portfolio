@@ -1,87 +1,5 @@
-import bozo from '@/public/projects/bozo-web.png'
-import coffee from '@/public/projects/coffee-delivery.png'
-import omnifood from '@/public/projects/omnifood.png'
-import next from '@/public/techs/next.png'
-import html from '@/public/techs/html.png'
-import react from '@/public/techs/react.png'
-import sass from '@/public/techs/sass.png'
-import css from '@/public/techs/css.png'
-import tailwind from '@/public/techs/tailwind.png'
-import typescript from '@/public/techs/typescript.svg'
-import Image, { StaticImageData } from 'next/image'
-
-interface IProjects {
-  name: string
-  img: StaticImageData
-  href: string
-  description: string
-  techs: {
-    img: StaticImageData
-    alt: string
-  }[]
-}
-
-const projects: IProjects[] = [
-  {
-    name: 'Bozó Web',
-    img: bozo,
-    href: 'https://bozo-web.vercel.app/',
-    description:
-      'Bozó Web é um site funcional, criado para facilitar a marcação de pontos, controle de turnos e ranqueamento de jogadores. Desenvolvido para dispositivos móveis, ele opera offline e inclui um sistema de dados para garantir a acessibilidade dos usuários.',
-    techs: [
-      {
-        img: next,
-        alt: 'Next.JS',
-      },
-      {
-        img: typescript,
-        alt: 'TypeScript',
-      },
-      {
-        img: tailwind,
-        alt: 'Tailwind',
-      },
-    ],
-  },
-  {
-    name: 'Coffee Delivery',
-    img: coffee,
-    href: 'https://coffee-delivery-sigma-jet.vercel.app/',
-    description:
-      'Coffee Delivery é um exemplo de loja online de café, demonstrando minha capacidade de desenvolvimento web. O projeto destaca minha habilidade em criar interfaces intuitivas e eficientes para clientes.',
-    techs: [
-      {
-        img: react,
-        alt: 'React.JS',
-      },
-      {
-        img: typescript,
-        alt: 'TypeScript',
-      },
-      {
-        img: sass,
-        alt: 'Sass',
-      },
-    ],
-  },
-  {
-    name: 'Omnifood',
-    img: omnifood,
-    href: 'https://omnifood-flax.vercel.app/',
-    description:
-      'Omnifood é um exemplo da minhas habilidades com HTML e CSS puro. A página de divulgação de um serviço de assinatura de refeições destaca-se pela sua simplicidade e elegância, demonstrando meu domínio das tecnologias fundamentais da web.',
-    techs: [
-      {
-        img: html,
-        alt: 'Pure HTML',
-      },
-      {
-        img: css,
-        alt: 'Pure CSS',
-      },
-    ],
-  },
-]
+import { projects } from '@/mock/projects'
+import Image from 'next/image'
 
 export function Projects() {
   return (
@@ -92,11 +10,11 @@ export function Projects() {
           <br />
         </h2>
 
-        <div className='max-w-[100vw] overflow-x-auto overflow-y-visible flex gap-4 px-8 py-4'>
+        <div className='max-w-[100vw] overflow-x-auto overflow-y-visible flex gap-4 px-8 py-4 min-[1200px]:flex-wrap min-[1200px]:px-0 min-[1200px]:justify-center min-[1200px]:gap-8 min-[1700px]:gap-4 min-[1700px]:flex-nowrap'>
           {projects.map(project => (
             <a
               key={project.name}
-              className={`bg-[rgba(20,_20,_20)] flex flex-col shadow-lg min-w-[260px] w-[300px] transition-transform hover:-translate-y-4 cursor-pointer`}
+              className={`bg-[rgba(20,_20,_20)] flex flex-col shadow-lg min-w-[260px] w-[300px]  transition-transform hover:-translate-y-4 cursor-pointer`}
               href={project.href}
               target='_blank'
               rel='noreferrer'
@@ -122,7 +40,7 @@ export function Projects() {
 
                 <div>
                   <p className='text-sm sm:text-base'>Descrição:</p>
-                  <p className='text-xs text-justify'>
+                  <p className='text-xs '>
                     <span>{project.description}</span>
                   </p>
                 </div>
