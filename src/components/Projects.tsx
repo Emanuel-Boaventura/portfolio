@@ -4,9 +4,9 @@ import Image from 'next/image'
 export function Projects() {
   return (
     <section className='flex flex-col py-12' id='projects'>
-      <div className='sm:container-sub mx-auto flex flex-col items-center'>
+      <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>
         <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
-          Projetos
+          Projetos Pessoais
           <br />
         </h2>
 

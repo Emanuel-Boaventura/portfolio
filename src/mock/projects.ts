@@ -46,6 +46,27 @@ export const projects: IProjects[] = [
     ],
   },
   {
+    name: 'Biscoitos da Lu',
+    img: biscoitos,
+    href: 'https://lu-biscoitos.vercel.app/',
+    description:
+      'Cardápio digital dos Biscoitos da Lu, o site veio para evitar que sejam sempre feitas as mesmas perguntas, sobre os biscoitos e preços, agora a "Lu" simplesmente envia o site para os clientes onde eles podem tirar todas as duvidas antes de fazer o pedido, facilitando o processo de comunicação com o cliente.',
+    techs: [
+      {
+        img: next,
+        alt: 'Next.JS',
+      },
+      {
+        img: typescript,
+        alt: 'TypeScript',
+      },
+      {
+        img: tailwind,
+        alt: 'Tailwind',
+      },
+    ],
+  },
+  {
     name: 'Compostagem',
     img: compostagem,
     href: 'https://compostagem.vercel.app/',
@@ -63,27 +84,6 @@ export const projects: IProjects[] = [
       {
         img: typescript,
         alt: 'TypeScript',
-      },
-    ],
-  },
-  {
-    name: 'Biscoitos da Lu',
-    img: biscoitos,
-    href: 'https://lu-biscoitos.vercel.app/',
-    description:
-      'Cardápio digital dos Biscoitos da Lu, a empresa da minha mãe, onde ela utiliza o site como um simples cardápio, enviando para os clientes verem os biscoitos que ela fabrica, bem como os valores e a taxa de entrega, facilitando o processo de comunicação com o cliente.',
-    techs: [
-      {
-        img: next,
-        alt: 'Next.JS',
-      },
-      {
-        img: typescript,
-        alt: 'TypeScript',
-      },
-      {
-        img: tailwind,
-        alt: 'Tailwind',
       },
     ],
   },

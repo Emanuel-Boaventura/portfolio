@@ -32,7 +32,7 @@ const techs = [
 export function Hero() {
   return (
     <section className='relative flex flex-col items-center justify-center pb-20 pt-[calc(64px_+_24px)]'>
-      <div className='sm:container-sub relative flex flex-col items-center sm:justify-between lg:flex-row'>
+      <div className='sm:container-hero relative flex flex-col items-center sm:justify-between lg:flex-row'>
         <div className='flex flex-col text-center sm:gap-4 lg:text-start'>
           <p className='sm:text-2xl'>Olá, eu sou</p>
 

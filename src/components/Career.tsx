@@ -124,7 +124,7 @@ export function Career() {
 
   return (
     <section className='flex flex-col px-8 py-12' id='career'>
-      <div className='sm:container-sub mx-auto flex flex-col items-center'>
+      <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>
         <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
           Carreira
         </h2>
