@@ -1,11 +1,14 @@
+import useInViewport from '@/hooks/use-in-viewport'
 import hero from '@/public/my-photos/about.jpg'
 import Image from 'next/image'
 
 export function About() {
+  const ref = useInViewport()
   return (
     <section
+      ref={ref}
+      className='fade-element flex flex-col items-center justify-center py-12'
       id='about'
-      className='flex flex-col items-center justify-center py-12'
     >
       <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
         Biografia

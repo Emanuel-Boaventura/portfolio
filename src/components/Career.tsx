@@ -1,3 +1,4 @@
+import useInViewport from '@/hooks/use-in-viewport'
 import dompixel from '@/public/dompixel.svg'
 import next from '@/public/techs/next.png'
 import node from '@/public/techs/node.svg'
@@ -63,6 +64,8 @@ const jobs: IJobs[] = [
 ]
 
 export function Career() {
+  const ref = useInViewport()
+
   function renderJobs() {
     return jobs.map(job => (
       <div
@@ -123,7 +126,11 @@ export function Career() {
   }
 
   return (
-    <section className='flex flex-col px-8 py-12' id='career'>
+    <section
+      ref={ref}
+      className='fade-element flex flex-col px-8 py-12'
+      id='career'
+    >
       <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>
         <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
           Carreira

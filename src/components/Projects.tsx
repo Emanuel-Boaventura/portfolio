@@ -1,9 +1,15 @@
+import useInViewport from '@/hooks/use-in-viewport'
 import { projects } from '@/mock/projects'
 import Image from 'next/image'
 
 export function Projects() {
+  const ref = useInViewport()
   return (
-    <section className='flex flex-col py-12' id='projects'>
+    <section
+      ref={ref}
+      className='fade-element flex flex-col py-12'
+      id='projects'
+    >
       <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>
         <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
           Projetos Pessoais

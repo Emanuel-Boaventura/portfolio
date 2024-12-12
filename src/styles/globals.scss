@@ -40,6 +40,10 @@ a:active {
     @apply transition-colors hover:text-lime-500;
   }
 
+  .fade-element {
+    @apply opacity-0;
+  }
+
   span {
     @apply text-lime-500;
   }
@@ -106,4 +110,20 @@ a:active {
   100% {
     width: 280px; /* Ending width */
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
 }

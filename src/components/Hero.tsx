@@ -1,7 +1,8 @@
+import useInViewport from '@/hooks/use-in-viewport'
 import hero from '@/public/my-photos/hero.png'
 import next from '@/public/techs/next.png'
-import react from '@/public/techs/react.png'
 import node from '@/public/techs/node.svg'
+import react from '@/public/techs/react.png'
 import tailwind from '@/public/techs/tailwind.png'
 import typescript from '@/public/techs/typescript.svg'
 import Image from 'next/image'
@@ -30,8 +31,12 @@ const techs = [
 ]
 
 export function Hero() {
+  const ref = useInViewport()
   return (
-    <section className='relative flex flex-col items-center justify-center pb-20 pt-[calc(64px_+_24px)]'>
+    <section
+      ref={ref}
+      className='fade-element relative flex flex-col items-center justify-center pb-20 pt-[calc(64px_+_24px)]'
+    >
       <div className='sm:container-hero relative flex flex-col items-center sm:justify-between lg:flex-row'>
         <div className='flex flex-col text-center sm:gap-4 lg:text-start'>
           <p className='sm:text-2xl'>Olá, eu sou</p>
