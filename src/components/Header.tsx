@@ -8,9 +8,9 @@ export function Header({ setOpen }: IHeader) {
   return (
     <header className='fixed top-0 z-10 w-full bg-[#0a0a0a] px-6 py-4 font-semibold'>
       <div className='container mx-auto flex items-center justify-between'>
-        <p className='text-xl sm:text-base lg:text-2xl'>
+        <a href='#' className='text-xl sm:text-base lg:text-2xl'>
           Emanuel-<span>Boaventura</span>
-        </p>
+        </a>
 
         <button onClick={() => setOpen(true)} className='md:hidden'>
           <svg
@@ -97,7 +97,7 @@ export function Header({ setOpen }: IHeader) {
             </svg>
           </a>
 
-          <a href='mailto:emanuelbmatos321@gmai.com' className='links'>
+          <a href='mailto:emanuelbmatos321@gmail.com' className='links'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-6 w-6 stroke-white hover:stroke-lime-500'

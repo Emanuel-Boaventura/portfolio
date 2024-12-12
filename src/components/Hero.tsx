@@ -36,6 +36,7 @@ export function Hero() {
     <section
       ref={ref}
       className='fade-element relative flex flex-col items-center justify-center pb-20 pt-[calc(64px_+_24px)]'
+      id=''
     >
       <div className='sm:container-hero relative flex flex-col items-center sm:justify-between lg:flex-row'>
         <div className='flex flex-col text-center sm:gap-4 lg:text-start'>

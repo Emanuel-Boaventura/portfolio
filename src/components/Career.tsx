@@ -128,7 +128,7 @@ export function Career() {
   return (
     <section
       ref={ref}
-      className='fade-element flex flex-col px-8 py-12'
+      className='fade-element flex flex-col px-8 py-20'
       id='career'
     >
       <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>

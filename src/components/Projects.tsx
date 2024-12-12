@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <section
       ref={ref}
-      className='fade-element flex flex-col py-12'
+      className='fade-element flex flex-col py-20'
       id='projects'
     >
       <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>
