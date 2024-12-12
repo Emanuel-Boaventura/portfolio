@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from 'react'
 
-const useInViewport = () => {
+const useInViewport = (justFade = false) => {
   const ref = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
@@ -9,7 +9,7 @@ const useInViewport = () => {
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in')
+            entry.target.classList.add(justFade ? 'fade-in' : 'fade-in-slide')
             observer.unobserve(entry.target)
           }
         })

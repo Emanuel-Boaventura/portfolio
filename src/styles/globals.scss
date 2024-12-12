@@ -115,6 +115,20 @@ a:active {
 @keyframes fadeIn {
   from {
     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
     transform: translateY(20px);
   }
   to {
@@ -123,7 +137,7 @@ a:active {
   }
 }
 
-.fade-in {
+.fade-in-slide {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
 }

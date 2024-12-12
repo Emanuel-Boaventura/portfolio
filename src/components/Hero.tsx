@@ -31,7 +31,7 @@ const techs = [
 ]
 
 export function Hero() {
-  const ref = useInViewport()
+  const ref = useInViewport(true)
   return (
     <section
       ref={ref}
