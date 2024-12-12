@@ -11,24 +11,24 @@ export function Menu({ open, setOpen }: IMenu) {
 
   return (
     <div
-      className={`w-screen h-screen bg-[rgb(6,6,6,_0.2)] -z-10 backdrop-blur-sm fixed ${
+      className={`fixed -z-10 h-screen w-screen bg-[rgb(6,6,6,_0.2)] backdrop-blur-sm ${
         open ? 'stop-scroll z-10' : ''
       }`}
     >
       <nav
         className={`${
           open ? 'animate-open w-full' : 'animate-close w-1'
-        } fixed max-w-[280px] right-0 bg-[rgb(6,6,6)] z-50 overflow-hidden`}
+        } fixed right-0 z-50 max-w-[280px] overflow-hidden bg-[rgb(6,6,6)]`}
         style={{ height }}
       >
-        <div className='w-[280px] border-lime-500 border-l h-full py-4 px-6 relative'>
-          <div className='flex justify-between items-center border-b mb-4 pb-2'>
+        <div className='relative h-full w-[280px] border-l border-lime-500 px-6 py-4'>
+          <div className='mb-4 flex items-center justify-between border-b pb-2'>
             <p>Seções:</p>
 
             <button onClick={() => setOpen(false)}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='w-6 h-6'
+                className='h-6 w-6'
                 viewBox='0 0 24 24'
                 strokeWidth='1.5'
                 stroke='#fff'
@@ -43,7 +43,7 @@ export function Menu({ open, setOpen }: IMenu) {
             </button>
           </div>
 
-          <div className='flex flex-col gap-6 '>
+          <div className='flex flex-col gap-6'>
             <a href='#about' className='links' onClick={() => setOpen(false)}>
               Biografia
             </a>
@@ -60,7 +60,7 @@ export function Menu({ open, setOpen }: IMenu) {
               Carreira
             </a>
 
-            <div className='flex gap-4 absolute bottom-6 left-0 w-full justify-center'>
+            <div className='absolute bottom-6 left-0 flex w-full justify-center gap-4'>
               <a
                 href='https://www.linkedin.com/in/emanuelboaventura/'
                 target='_blank'
@@ -69,7 +69,7 @@ export function Menu({ open, setOpen }: IMenu) {
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='w-6 h-6 stroke-white hover:stroke-lime-500'
+                  className='h-6 w-6 stroke-white hover:stroke-lime-500'
                   viewBox='0 0 24 24'
                   strokeWidth='1.5'
                   fill='none'
@@ -93,7 +93,7 @@ export function Menu({ open, setOpen }: IMenu) {
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='w-6 h-6 stroke-white hover:stroke-lime-500'
+                  className='h-6 w-6 stroke-white hover:stroke-lime-500'
                   viewBox='0 0 24 24'
                   strokeWidth='1.5'
                   fill='none'
@@ -112,7 +112,7 @@ export function Menu({ open, setOpen }: IMenu) {
               <a href='mailto:emanuelbmatos321@gmai.com' className='links'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='w-6 h-6 stroke-white hover:stroke-lime-500'
+                  className='h-6 w-6 stroke-white hover:stroke-lime-500'
                   viewBox='0 0 24 24'
                   strokeWidth='1.5'
                   fill='none'

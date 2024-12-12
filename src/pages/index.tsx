@@ -11,7 +11,7 @@ export default function Home() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='min-h-screen bg-[#0d0d0d] text-white flex flex-col relative overflow-hidden'>
+    <div className='relative flex min-h-screen flex-col overflow-hidden bg-[#0d0d0d] text-white'>
       <Header setOpen={setOpen} />
 
       <Menu open={open} setOpen={setOpen} />

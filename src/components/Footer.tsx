@@ -1,8 +1,8 @@
 export function Footer() {
   return (
-    <footer className='py-3 sm:py-4 mt-36 bg-[#0a0a0a]'>
+    <footer className='mt-36 bg-[#0a0a0a] py-3 sm:py-4'>
       <div className='container mx-auto flex justify-center'>
-        <p className='text-xs sm:text-base text-center'>
+        <p className='text-center text-xs sm:text-base'>
           Desenvolvido por:{' '}
           <a
             href='https://www.linkedin.com/in/emanuelboaventura/'

@@ -6,8 +6,8 @@ interface IHeader {
 
 export function Header({ setOpen }: IHeader) {
   return (
-    <header className='fixed top-0 z-10 w-full px-6 py-4 bg-[#0a0a0a] font-semibold'>
-      <div className='container mx-auto flex justify-between items-center'>
+    <header className='fixed top-0 z-10 w-full bg-[#0a0a0a] px-6 py-4 font-semibold'>
+      <div className='container mx-auto flex items-center justify-between'>
         <p className='text-xl sm:text-base lg:text-2xl'>
           Emanuel-<span>Boaventura</span>
         </p>
@@ -15,7 +15,7 @@ export function Header({ setOpen }: IHeader) {
         <button onClick={() => setOpen(true)} className='md:hidden'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='w-6 h-6'
+            className='h-6 w-6'
             viewBox='0 0 24 24'
             strokeWidth='1.5'
             stroke='#fff'
@@ -30,7 +30,7 @@ export function Header({ setOpen }: IHeader) {
           </svg>
         </button>
 
-        <div className='hidden md:flex text-base gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+        <div className='absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 gap-6 text-base md:flex'>
           <a href='#about' className='links lg:sections'>
             Biografia
           </a>
@@ -48,7 +48,7 @@ export function Header({ setOpen }: IHeader) {
           </a>
         </div>
 
-        <div className='hidden md:flex gap-4'>
+        <div className='hidden gap-4 md:flex'>
           <a
             href='https://www.linkedin.com/in/emanuelboaventura/'
             target='_blank'
@@ -57,7 +57,7 @@ export function Header({ setOpen }: IHeader) {
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-6 h-6 stroke-white hover:stroke-lime-500'
+              className='h-6 w-6 stroke-white hover:stroke-lime-500'
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               fill='none'
@@ -81,7 +81,7 @@ export function Header({ setOpen }: IHeader) {
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-6 h-6 stroke-white hover:stroke-lime-500'
+              className='h-6 w-6 stroke-white hover:stroke-lime-500'
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               fill='none'
@@ -100,7 +100,7 @@ export function Header({ setOpen }: IHeader) {
           <a href='mailto:emanuelbmatos321@gmai.com' className='links'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-6 h-6 stroke-white hover:stroke-lime-500'
+              className='h-6 w-6 stroke-white hover:stroke-lime-500'
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               fill='none'

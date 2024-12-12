@@ -1,5 +1,6 @@
 import hero from '@/public/my-photos/hero.png'
 import next from '@/public/techs/next.png'
+import react from '@/public/techs/react.png'
 import node from '@/public/techs/node.svg'
 import tailwind from '@/public/techs/tailwind.png'
 import typescript from '@/public/techs/typescript.svg'
@@ -11,13 +12,13 @@ const techs = [
     alt: 'Next.JS',
   },
   {
+    img: react,
+    alt: 'React.JS',
+  },
+  {
     img: typescript,
     alt: 'TypeScript',
   },
-  // {
-  //   img: react,
-  //   alt: 'React.JS',
-  // },
   {
     img: node,
     alt: 'Node.JS',
@@ -30,54 +31,32 @@ const techs = [
 
 export function Hero() {
   return (
-    <section className='flex flex-col pt-[calc(64px_+_24px)] pb-20 items-center justify-center relative'>
-      <div
-        className='flex flex-col items-center relative
-        sm:container-sub sm:justify-between
-        lg:flex-row
-        '
-      >
+    <section className='relative flex flex-col items-center justify-center pb-20 pt-[calc(64px_+_24px)]'>
+      <div className='sm:container-sub relative flex flex-col items-center sm:justify-between lg:flex-row'>
         <div className='flex flex-col text-center sm:gap-4 lg:text-start'>
           <p className='sm:text-2xl'>Olá, eu sou</p>
 
-          <h1
-            className='text-lime-500 text-lg my-2 font-extrabold
-            min-[300px]:text-xl
-            sm:text-3xl sm:my-0
-            lg:text-5xl lg:my-2
-            xl:text-6xl
-            '
-          >
+          <h1 className='my-2 text-lg font-extrabold text-lime-500 min-[300px]:text-xl sm:my-0 sm:text-3xl lg:my-2 lg:text-5xl xl:text-6xl'>
             {`<`} Emanuel <br className='hidden lg:inline' /> Boaventura {`/>`}
           </h1>
 
-          <p
-            className='font-semibold
-            sm:text-2xl
-            lg:text-3xl
-            '
-          >
+          <p className='font-semibold sm:text-2xl lg:text-3xl'>
             Desenvolvedor{' '}
             <span className='underline underline-offset-4'>FullStack</span>
           </p>
 
-          <div
-            className='self-start mx-auto mt-4 bottom-0 left-0
-            sm:mt-0
-            /lg:absolute lg:mx-0 lg:mt-4
-            '
-          >
-            <h2 className='sm:text-2xl font-bold sm:mb-4'>
+          <div className='/lg:absolute bottom-0 left-0 mx-auto mt-4 self-start sm:mt-0 lg:mx-0 lg:mt-4'>
+            <h2 className='font-bold sm:mb-4 sm:text-2xl'>
               Principais <span>Tecnologias</span>:
             </h2>
 
-            <div className='grid grid-cols-4 w-fit mx-auto gap-4 mt-2 lg:mx-0 lg:grid-cols-5'>
+            <div className='mx-auto mt-2 grid w-fit grid-cols-4 gap-4 lg:mx-0 lg:grid-cols-5'>
               {techs.map(tech => (
                 <Image
                   src={tech.img}
                   key={tech.alt}
                   alt={`Logo ${tech.alt}`}
-                  className='w-7 h-7 sm:w-11 sm:h-11 object-contain'
+                  className='h-7 w-7 object-contain sm:h-11 sm:w-11'
                 />
               ))}
             </div>
@@ -89,16 +68,13 @@ export function Hero() {
             src={hero}
             alt='Uma foto minha'
             quality={100}
-            className='w-64 object-contain min-h-[304px] h-fit max-h-[680px] border-r-4 border-b-4 border-lime-500
-            sm:w-80
-            lg:w-full
-            '
+            className='h-fit max-h-[680px] min-h-[304px] w-64 border-b-4 border-r-4 border-lime-500 object-contain sm:w-80 lg:w-full'
           />
         </div>
       </div>
 
-      <span className='my-8 '>
-        Ver mais <span className='animate-bounce inline-flex'>↓</span>
+      <span className='my-8'>
+        Ver mais <span className='inline-flex animate-bounce'>↓</span>
       </span>
     </section>
   )
