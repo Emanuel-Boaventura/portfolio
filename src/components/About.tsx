@@ -5,36 +5,21 @@ export function About() {
   return (
     <section
       id='about'
-      className='flex flex-col py-20 items-center justify-center'
+      className='flex flex-col items-center justify-center py-12'
     >
-      <h2 className='text-xl font-bold text-center mb-10  sm:text-2xl'>
+      <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
         Biografia
       </h2>
 
-      <div
-        className='flex flex-col gap-10 items-center relative w-[86.25vw] px-4 container-sub
-        lg:flex-row lg:px-7
-        min-[1200px]:px-12
-        xl:justify-between
-        '
-      >
-        <div className='neon absolute w-0.5 h-full left-0' />
+      <div className='container-sub relative flex w-[86.25vw] flex-col items-center gap-10 px-4 lg:flex-row lg:px-7 min-[1200px]:px-12 xl:justify-between'>
+        <div className='neon absolute left-0 h-full w-0.5' />
 
-        <div
-          className='flex w-60 h-60 border-4 border-lime-500 items-center justify-center overflow-hidden
-          lg:w-[320px] lg:h-[320px] lg:min-w-[320px]
-          '
-        >
+        <div className='flex h-60 w-60 items-center justify-center overflow-hidden border-4 border-lime-500 lg:h-[320px] lg:w-[320px] lg:min-w-[320px]'>
           <Image src={hero} alt='Uma foto minha' quality={100} />
         </div>
 
         <div className='bg-[rgba(20,_20,_20)] p-4'>
-          <p
-            className='text-xs max-w-sm text-justify leading-relaxed
-            sm:max-w-md sm:text-sm
-            lg:text-lg lg:max-w-none
-            '
-          >
+          <p className='max-w-sm text-justify text-xs leading-relaxed sm:max-w-md sm:text-sm lg:max-w-none lg:text-lg'>
             Desenvolvedor Fullstack com alta experiência no desenvolvimento
             Frontend. Especializado em construções de aplicações robustas com
             TypeScript e NextJS. Seguindo padrões estabelecidos em Figma com
@@ -54,7 +39,7 @@ export function About() {
           </p>
         </div>
 
-        <div className='neon absolute w-0.5 h-full right-0 ' />
+        <div className='neon absolute right-0 h-full w-0.5' />
       </div>
     </section>
   )
