@@ -23,26 +23,18 @@ export function About() {
 
         <div className='bg-[rgba(20,_20,_20)] p-4'>
           <p className='max-w-sm text-xs leading-relaxed sm:max-w-md sm:text-sm lg:max-w-none lg:text-lg'>
-            Desenvolvedor Fullstack com foco no desenvolvimento Frontend.
-            Especializado em construções de aplicações robustas com base em{' '}
-            <span>JavaScript</span> com <span>TypeScript</span>.
+            Tenho como objetivo criar aplicações de alta qualidade, priorizando
+            a experiência do usuário, desempenho e performance. Com atenção aos
+            detalhes e uma mentalidade voltada à resolução de problemas, busco
+            construir soluções que sejam tanto funcionais quanto elegantes.
             <br />
             <br />
-            No frontend utilizo principalmente <span>React</span>, mas também
-            possuo conhecimento de <span>Angular</span> e <span>Vue.js</span>.
-            Também possuo experiência em desenvolvimento Mobile com{' '}
-            <span>React Native</span> e <span>Expo</span>. No backend utilizo{' '}
-            <span>Node.js</span> com <span>Express</span>, <span>AdonisJS</span>{' '}
-            e <span>NestJS</span>. Utilizando bancos relacionais e não
-            relacionais em <span>MySQL</span>, <span>PostgreSQL</span> e{' '}
-            <span>MongoDB</span>.
-            <br />
-            <br />
-            Proficiente no uso de <span>Git</span>, <span>Github</span> e{' '}
-            <span>GitLab</span> para controle de versão e colaboração em
-            projetos, experiencia prática com <span>Docker</span> para
-            conteinerização e gerenciamento de ambientes. Experiência em
-            metodologias ágeis como <span>Scrum</span> e <span>Kanban</span>.
+            Trabalho como desenvolvedor Fullstack com foco principal no
+            Frontend, onde me destaco na criação de interfaces intuitivas e
+            responsivas. Atualmente, estou aprofundando meus conhecimentos em
+            desenvolvimento Backend para ampliar ainda mais minhas habilidades e
+            entregar soluções completas. Também possuo experiência no
+            desenvolvimento Mobile, criando aplicativos eficientes e modernos.
           </p>
         </div>
 
