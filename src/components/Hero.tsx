@@ -1,37 +1,14 @@
 import useInViewport from '@/hooks/use-in-viewport'
+import { techs } from '@/mock/techs'
 import hero from '@/public/my-photos/hero.png'
-import next from '@/public/techs/next.png'
-import node from '@/public/techs/node.svg'
-import react from '@/public/techs/react.png'
-import tailwind from '@/public/techs/tailwind.png'
-import typescript from '@/public/techs/typescript.svg'
 import Image from 'next/image'
 
-const techs = [
-  {
-    img: next,
-    alt: 'Next.JS',
-  },
-  {
-    img: react,
-    alt: 'React.JS',
-  },
-  {
-    img: typescript,
-    alt: 'TypeScript',
-  },
-  {
-    img: node,
-    alt: 'Node.JS',
-  },
-  {
-    img: tailwind,
-    alt: 'Tailwind',
-  },
-]
+const { next, react, typescript, node, tailwind } = techs
+const myTechs = [next, react, typescript, node, tailwind]
 
 export function Hero() {
   const ref = useInViewport(true)
+
   return (
     <section
       ref={ref}
@@ -57,7 +34,7 @@ export function Hero() {
             </h2>
 
             <div className='mx-auto mt-2 grid w-fit grid-cols-4 gap-4 lg:mx-0 lg:grid-cols-5'>
-              {techs.map(tech => (
+              {myTechs.map(tech => (
                 <Image
                   src={tech.img}
                   key={tech.alt}
