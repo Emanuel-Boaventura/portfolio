@@ -3,8 +3,8 @@ import { techs } from '@/mock/techs'
 import hero from '@/public/my-photos/hero.png'
 import Image from 'next/image'
 
-const { next, react, typescript, node, tailwind } = techs
-const myTechs = [next, react, typescript, node, tailwind]
+const { next, react, sass, node, nest, tailwind } = techs
+const myTechs = [react, next, node, nest, tailwind, sass]
 
 export function Hero() {
   const ref = useInViewport(true)
@@ -15,7 +15,7 @@ export function Hero() {
       className='fade-element relative flex flex-col items-center justify-center pb-20 pt-[calc(64px_+_24px)]'
       id=''
     >
-      <div className='sm:container-hero relative flex flex-col items-center sm:justify-between lg:flex-row'>
+      <div className='sm:container-hero relative flex flex-col items-center gap-4 sm:justify-between lg:flex-row'>
         <div className='flex flex-col text-center sm:gap-4 lg:text-start'>
           <p className='sm:text-2xl'>Olá, eu sou</p>
 
@@ -33,7 +33,7 @@ export function Hero() {
               Principais <span>Tecnologias</span>:
             </h2>
 
-            <div className='mx-auto mt-2 grid w-fit grid-cols-4 gap-4 lg:mx-0 lg:grid-cols-5'>
+            <div className='mx-auto mt-2 grid w-fit grid-cols-6 gap-4 lg:mx-0'>
               {myTechs.map(tech => (
                 <Image
                   src={tech.img}

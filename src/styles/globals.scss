@@ -141,3 +141,27 @@ a:active {
   opacity: 0;
   animation: fadeInSlide 1.5s forwards;
 }
+
+@keyframes infiniteSlide {
+  // caso alterar esse valor, alterar também em About.tsx
+  from {
+    right: -64px;
+  }
+  to {
+    left: -64px;
+  }
+}
+
+.infinite-slide {
+  animation: infiniteSlide 10s linear infinite;
+}
+
+.slider-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
