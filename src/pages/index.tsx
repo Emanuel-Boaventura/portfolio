@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Menu } from '@/components/Menu'
 import { Projects } from '@/components/Projects'
+import { Techs } from '@/components/Techs'
 import { useState } from 'react'
 
 export default function Home() {
@@ -20,6 +21,8 @@ export default function Home() {
         <Hero />
 
         <About />
+
+        <Techs />
 
         <Projects />
 

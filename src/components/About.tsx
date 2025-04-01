@@ -7,7 +7,7 @@ export function About() {
   return (
     <section
       ref={ref}
-      className='fade-element flex flex-col items-center justify-center py-20'
+      className='fade-element flex flex-col items-center justify-center pb-10 pt-20'
       id='about'
     >
       <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
