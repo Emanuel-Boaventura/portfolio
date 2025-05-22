@@ -8,6 +8,7 @@ export function Projects() {
   const ref = useInViewport()
   const { language } = useLanguageContext()
   const t = translations[language as 'en' | 'pt-br']
+  const isEn = language === 'en'
 
   return (
     <section
@@ -33,7 +34,7 @@ export function Projects() {
               <div className='h-48 overflow-hidden'>
                 <Image
                   src={project.img}
-                  alt={`Imagem do projeto: ${project.name}`}
+                  alt={`Imagem do projeto: ${isEn ? project.nameEn : project.name}`}
                   quality={100}
                   className='w-full'
                 />
@@ -45,7 +46,7 @@ export function Projects() {
                 <div>
                   <p className='text-sm sm:text-base'>{t.projects.project}</p>
                   <p>
-                    <span>{project.name}</span>
+                    <span>{isEn ? project.nameEn : project.name}</span>
                   </p>
                 </div>
 
@@ -54,7 +55,9 @@ export function Projects() {
                     {t.projects.description}
                   </p>
                   <p className='text-xs'>
-                    <span>{project.description}</span>
+                    <span>
+                      {isEn ? project.descriptionEn : project.description}
+                    </span>
                   </p>
                 </div>
 
