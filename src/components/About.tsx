@@ -1,9 +1,14 @@
+import { useLanguageContext } from '@/contexts/LanguageContext'
 import useInViewport from '@/hooks/use-in-viewport'
+import { translations } from '@/i18n/translations'
 import hero from '@/public/my-photos/about.jpg'
 import Image from 'next/image'
 
 export function About() {
   const ref = useInViewport()
+  const { language } = useLanguageContext()
+  const t = translations[language as 'en' | 'pt-br']
+
   return (
     <section
       ref={ref}
@@ -11,7 +16,7 @@ export function About() {
       id='about'
     >
       <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
-        Biografia
+        {t.about.title}
       </h2>
 
       <div className='relative flex max-w-[1280px] flex-col items-center justify-around gap-10 px-4 sm:px-16 lg:w-[86.25vw] lg:flex-row lg:px-7 min-[1200px]:px-12 xl:justify-between'>
@@ -22,19 +27,11 @@ export function About() {
         </div>
 
         <div className='bg-[rgba(20,_20,_20)] p-4'>
-          <p className='max-w-sm text-xs leading-relaxed sm:max-w-md sm:text-sm lg:max-w-none lg:text-lg'>
-            Tenho como objetivo criar aplicações de alta qualidade, priorizando
-            a experiência do usuário, desempenho e performance. Com atenção aos
-            detalhes e uma mentalidade voltada à resolução de problemas, busco
-            construir soluções que sejam tanto funcionais quanto elegantes.
-            <br />
-            <br />
-            Trabalho como desenvolvedor Fullstack com foco principal no
-            Frontend, onde me destaco na criação de interfaces intuitivas e
-            responsivas. Atualmente, estou aprofundando meus conhecimentos em
-            desenvolvimento Backend para ampliar ainda mais minhas habilidades e
-            entregar soluções completas. Também possuo experiência no
-            desenvolvimento Mobile, criando aplicativos eficientes e modernos.
+          <p
+            className='max-w-sm text-xs leading-relaxed sm:max-w-md sm:text-sm lg:max-w-none lg:text-lg'
+            style={{ whiteSpace: 'pre-line' }}
+          >
+            {t.about.text}
           </p>
         </div>
 

@@ -1,3 +1,6 @@
+import { useLanguageContext } from '@/contexts/LanguageContext'
+import { translations } from '@/i18n/translations'
+import Image from 'next/image'
 import { Dispatch, SetStateAction } from 'react'
 
 interface IHeader {
@@ -5,12 +8,32 @@ interface IHeader {
 }
 
 export function Header({ setOpen }: IHeader) {
+  const { language, setLanguage } = useLanguageContext()
+  const lang = language as 'en' | 'pt-br'
+  const t = translations[lang]
+
+  const nextLang = lang === 'en' ? 'pt-br' : 'en'
+  const flagSrc = nextLang === 'en' ? '/us.svg' : '/br.svg'
+  const flagAlt = nextLang === 'en' ? 'USA flag' : 'Brazil flag'
+  const langLabel = nextLang === 'en' ? 'EN' : 'PT-BR'
+
   return (
     <header className='fixed top-0 z-10 w-full bg-[#0a0a0a] px-6 py-4 font-semibold'>
       <div className='container mx-auto flex items-center justify-between'>
         <a href='#' className='text-xl sm:text-base lg:text-2xl'>
           Emanuel-<span>Boaventura</span>
         </a>
+
+        <div className='flex items-center gap-2 md:hidden'>
+          <button
+            onClick={() => setLanguage(nextLang)}
+            className='flex items-center gap-2 rounded border border-lime-500 px-2 py-1 text-xs transition-colors hover:bg-lime-500 hover:text-black'
+            aria-label='Toggle language'
+          >
+            <Image src={flagSrc} alt={flagAlt} width={20} height={14} />
+            {langLabel}
+          </button>
+        </div>
 
         <button onClick={() => setOpen(true)} className='md:hidden'>
           <svg
@@ -32,23 +55,20 @@ export function Header({ setOpen }: IHeader) {
 
         <div className='absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 gap-6 text-base md:flex'>
           <a href='#about' className='links lg:sections'>
-            Biografia
+            {t.nav.bio}
           </a>
-
           {/* <a href='#skills' className='links lg:sections'>
             Habilidades
           </a> */}
-
           <a href='#projects' className='links lg:sections'>
-            Projetos
+            {t.nav.projects}
           </a>
-
           <a href='#career' className='links lg:sections'>
-            Carreira
+            {t.nav.career}
           </a>
         </div>
 
-        <div className='hidden gap-4 md:flex'>
+        <div className='hidden items-center gap-4 md:flex'>
           <a
             href='https://www.linkedin.com/in/emanuelboaventura/'
             target='_blank'
@@ -114,6 +134,15 @@ export function Header({ setOpen }: IHeader) {
               <path d='M18 15l3 3l-3 3' />
             </svg>
           </a>
+
+          <button
+            onClick={() => setLanguage(nextLang)}
+            className='ml-4 flex items-center gap-2 rounded border border-lime-500 px-2 py-1 text-xs transition-colors hover:bg-lime-500 hover:text-black'
+            aria-label='Toggle language'
+          >
+            <Image src={flagSrc} alt={flagAlt} width={20} height={14} />
+            {langLabel}
+          </button>
         </div>
       </div>
     </header>

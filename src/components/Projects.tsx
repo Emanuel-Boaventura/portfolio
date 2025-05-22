@@ -1,9 +1,14 @@
+import { useLanguageContext } from '@/contexts/LanguageContext'
 import useInViewport from '@/hooks/use-in-viewport'
+import { translations } from '@/i18n/translations'
 import { projects } from '@/mock/projects'
 import Image from 'next/image'
 
 export function Projects() {
   const ref = useInViewport()
+  const { language } = useLanguageContext()
+  const t = translations[language as 'en' | 'pt-br']
+
   return (
     <section
       ref={ref}
@@ -12,7 +17,7 @@ export function Projects() {
     >
       <div className='mx-auto flex w-full max-w-[1280px] flex-col items-center'>
         <h2 className='mb-10 text-center text-xl font-bold sm:text-2xl'>
-          Projetos Pessoais
+          {t.projects.title}
           <br />
         </h2>
 
@@ -38,21 +43,23 @@ export function Projects() {
 
               <div className='flex h-[352px] flex-col gap-3 px-6 py-4'>
                 <div>
-                  <p className='text-sm sm:text-base'>Projeto:</p>
+                  <p className='text-sm sm:text-base'>{t.projects.project}</p>
                   <p>
                     <span>{project.name}</span>
                   </p>
                 </div>
 
                 <div>
-                  <p className='text-sm sm:text-base'>Descrição:</p>
+                  <p className='text-sm sm:text-base'>
+                    {t.projects.description}
+                  </p>
                   <p className='text-xs'>
                     <span>{project.description}</span>
                   </p>
                 </div>
 
                 <div className='mt-auto'>
-                  <p className='text-sm sm:text-base'>Tecnologias:</p>
+                  <p className='text-sm sm:text-base'>{t.projects.techs}</p>
 
                   <div className='mx-auto mt-2 flex gap-4 lg:mx-0 lg:grid-cols-5'>
                     {project.techs.map(tech => (

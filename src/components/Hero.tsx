@@ -1,4 +1,6 @@
+import { useLanguageContext } from '@/contexts/LanguageContext'
 import useInViewport from '@/hooks/use-in-viewport'
+import { translations } from '@/i18n/translations'
 import { techs } from '@/mock/techs'
 import hero from '@/public/my-photos/hero.png'
 import Image from 'next/image'
@@ -8,6 +10,8 @@ const myTechs = [react, next, node, nest, tailwind, sass]
 
 export function Hero() {
   const ref = useInViewport(true)
+  const { language } = useLanguageContext()
+  const t = translations[language as 'en' | 'pt-br']
 
   return (
     <section
@@ -17,20 +21,36 @@ export function Hero() {
     >
       <div className='sm:container-hero relative flex flex-col items-center gap-4 sm:justify-between lg:flex-row'>
         <div className='flex flex-col text-center sm:gap-4 lg:text-start'>
-          <p className='sm:text-2xl'>Olá, eu sou</p>
+          <p className='sm:text-2xl'>{t.hero.hello}</p>
 
           <h1 className='my-2 text-lg font-extrabold text-lime-500 min-[300px]:text-xl sm:my-0 sm:text-3xl lg:my-2 lg:text-5xl xl:text-6xl'>
             {`<`} Emanuel <br className='hidden lg:inline' /> Boaventura {`/>`}
           </h1>
 
           <p className='font-semibold sm:text-2xl lg:text-3xl'>
-            Desenvolvedor{' '}
-            <span className='underline underline-offset-4'>FullStack</span>
+            <span
+              className={
+                language === 'pt-br'
+                  ? 'text-white'
+                  : 'text-lime-500 underline underline-offset-4'
+              }
+            >
+              {t.hero.dev.split(' ')[0]}
+            </span>{' '}
+            <span
+              className={
+                language === 'pt-br'
+                  ? 'text-lime-500 underline underline-offset-4'
+                  : 'text-white'
+              }
+            >
+              {t.hero.dev.split(' ')[1]}
+            </span>
           </p>
 
           <div className='/lg:absolute bottom-0 left-0 mx-auto mt-4 self-start sm:mt-0 lg:mx-0 lg:mt-4'>
             <h2 className='font-bold sm:mb-4 sm:text-2xl'>
-              Principais <span>Tecnologias</span>:
+              {t.hero.mainTechs}
             </h2>
 
             <div className='mx-auto mt-2 grid w-fit grid-cols-6 gap-4 lg:mx-0'>
@@ -57,7 +77,7 @@ export function Hero() {
       </div>
 
       <span className='my-8'>
-        Ver mais <span className='inline-flex animate-bounce'>↓</span>
+        {t.hero.seeMore} <span className='inline-flex animate-bounce'>↓</span>
       </span>
     </section>
   )

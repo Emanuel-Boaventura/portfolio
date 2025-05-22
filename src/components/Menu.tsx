@@ -1,4 +1,7 @@
+import { LanguageToggle } from '@/components/LanguageToggle'
+import { useLanguageContext } from '@/contexts/LanguageContext'
 import { useViewportSize } from '@/hooks/use-viewport-size'
+import { translations } from '@/i18n/translations'
 import { Dispatch, SetStateAction } from 'react'
 
 interface IMenu {
@@ -8,6 +11,8 @@ interface IMenu {
 
 export function Menu({ open, setOpen }: IMenu) {
   const { height } = useViewportSize()
+  const { language } = useLanguageContext()
+  const t = translations[language as 'en' | 'pt-br']
 
   return (
     <div
@@ -23,7 +28,7 @@ export function Menu({ open, setOpen }: IMenu) {
       >
         <div className='relative h-full w-[280px] border-l border-lime-500 px-6 py-4'>
           <div className='mb-4 flex items-center justify-between border-b pb-2'>
-            <p>Seções:</p>
+            <p>{t.menu.sections}</p>
 
             <button onClick={() => setOpen(false)}>
               <svg
@@ -45,7 +50,7 @@ export function Menu({ open, setOpen }: IMenu) {
 
           <div className='flex flex-col gap-6'>
             <a href='#about' className='links' onClick={() => setOpen(false)}>
-              Biografia
+              {t.menu.bio}
             </a>
 
             <a
@@ -53,11 +58,11 @@ export function Menu({ open, setOpen }: IMenu) {
               className='links'
               onClick={() => setOpen(false)}
             >
-              Projetos
+              {t.menu.projects}
             </a>
 
             <a href='#career' className='links' onClick={() => setOpen(false)}>
-              Carreira
+              {t.menu.career}
             </a>
 
             <div className='absolute bottom-6 left-0 flex w-full justify-center gap-4'>
@@ -126,6 +131,8 @@ export function Menu({ open, setOpen }: IMenu) {
                   <path d='M18 15l3 3l-3 3' />
                 </svg>
               </a>
+
+              <LanguageToggle />
             </div>
           </div>
         </div>
