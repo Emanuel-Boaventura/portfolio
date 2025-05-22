@@ -32,6 +32,7 @@ const {
   mysql,
   postgresql,
   adonis,
+  shadcn,
 } = techs
 
 export const jobs: IJobs[] = [
@@ -51,7 +52,7 @@ export const jobs: IJobs[] = [
     descriptionEn:
       'Acting as a Frontend Tech Lead, I am responsible for leading a team of two interns and a mid-level developer, overseeing project architecture, best practices, code review, and providing technical support in React projects. I regularly participate in meetings with clients to align scope, deadlines, and deliveries, while planning and distributing tasks with a focus on quality and consistency. Beyond my leadership role, I also contribute as a developer in other projects, supporting both mobile (React Native) and web (React.js) development needs as required.',
     actualJob: true,
-    techs: [react, tailwind, typescript],
+    techs: [react, tailwind, shadcn, typescript],
   },
   {
     companyName: 'DomPixel Tecnologia',
@@ -73,6 +74,7 @@ export const jobs: IJobs[] = [
       react,
       next,
       tailwind,
+      shadcn,
       sass,
       node,
       nest,
@@ -98,6 +100,6 @@ export const jobs: IJobs[] = [
     descriptionEn:
       'I started my career as a Junior Developer, participating in the maintenance and evolution of existing projects, applying componentization concepts and code reuse with React, focusing on performance and best programming practices. I collaborated with the Backend team to consume and integrate REST APIs, ensuring consistency between sent and received data. I deepened my knowledge in HTML, CSS, Javascript, and React, as well as understanding the operation of Git and Github.',
     actualJob: false,
-    techs: [react, sass, typescript, node],
+    techs: [react, sass, typescript, node, tailwind, shadcn],
   },
 ]

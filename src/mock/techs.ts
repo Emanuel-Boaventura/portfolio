@@ -9,6 +9,7 @@ import node from '@/public/techs/node.svg'
 import postgresql from '@/public/techs/postgresql.png'
 import react from '@/public/techs/react.png'
 import sass from '@/public/techs/sass.png'
+import shadcn from '@/public/techs/shadcn.svg'
 import sqlite from '@/public/techs/sqlite.png'
 import tailwind from '@/public/techs/tailwind.png'
 import typescript from '@/public/techs/typescript.svg'
@@ -82,5 +83,9 @@ export const techs = createTechs({
   adonis: {
     img: adonis,
     alt: 'AdonisJS',
+  },
+  shadcn: {
+    img: shadcn,
+    alt: 'shadcn/ui',
   },
 })

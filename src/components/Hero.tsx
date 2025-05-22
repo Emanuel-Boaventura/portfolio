@@ -5,8 +5,8 @@ import { techs } from '@/mock/techs'
 import hero from '@/public/my-photos/hero.png'
 import Image from 'next/image'
 
-const { next, react, sass, node, nest, tailwind } = techs
-const myTechs = [react, next, node, nest, tailwind, sass]
+const { next, react, shadcn, node, nest, tailwind } = techs
+const myTechs = [react, next, node, nest, tailwind, shadcn]
 
 export function Hero() {
   const ref = useInViewport(true)
