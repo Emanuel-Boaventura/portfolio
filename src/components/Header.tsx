@@ -8,14 +8,9 @@ interface IHeader {
 }
 
 export function Header({ setOpen }: IHeader) {
-  const { language, setLanguage } = useLanguageContext()
+  const { language } = useLanguageContext()
   const lang = language as 'en' | 'pt-br'
   const t = translations[lang]
-
-  const nextLang = lang === 'en' ? 'pt-br' : 'en'
-  const flagSrc = nextLang === 'en' ? '/us.svg' : '/br.svg'
-  const flagAlt = nextLang === 'en' ? 'USA flag' : 'Brazil flag'
-  const langLabel = nextLang === 'en' ? 'EN' : 'PT-BR'
 
   return (
     <header className='fixed top-0 z-10 w-full bg-[#0a0a0a] px-6 py-4 font-semibold'>
