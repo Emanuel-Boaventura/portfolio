@@ -1,6 +1,6 @@
+import { LanguageToggle } from '@/components/LanguageToggle'
 import { useLanguageContext } from '@/contexts/LanguageContext'
 import { translations } from '@/i18n/translations'
-import Image from 'next/image'
 import { Dispatch, SetStateAction } from 'react'
 
 interface IHeader {
@@ -23,17 +23,6 @@ export function Header({ setOpen }: IHeader) {
         <a href='#' className='text-xl sm:text-base lg:text-2xl'>
           Emanuel-<span>Boaventura</span>
         </a>
-
-        <div className='flex items-center gap-2 md:hidden'>
-          <button
-            onClick={() => setLanguage(nextLang)}
-            className='flex items-center gap-2 rounded border border-lime-500 px-2 py-1 text-xs transition-colors hover:bg-lime-500 hover:text-black'
-            aria-label='Toggle language'
-          >
-            <Image src={flagSrc} alt={flagAlt} width={20} height={14} />
-            {langLabel}
-          </button>
-        </div>
 
         <button onClick={() => setOpen(true)} className='md:hidden'>
           <svg
@@ -135,14 +124,7 @@ export function Header({ setOpen }: IHeader) {
             </svg>
           </a>
 
-          <button
-            onClick={() => setLanguage(nextLang)}
-            className='ml-4 flex items-center gap-2 rounded border border-lime-500 px-2 py-1 text-xs transition-colors hover:bg-lime-500 hover:text-black'
-            aria-label='Toggle language'
-          >
-            <Image src={flagSrc} alt={flagAlt} width={20} height={14} />
-            {langLabel}
-          </button>
+          <LanguageToggle />
         </div>
       </div>
     </header>
